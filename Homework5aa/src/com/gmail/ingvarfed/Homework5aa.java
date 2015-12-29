@@ -55,7 +55,7 @@ public class Homework5aa {
 		}
 		int step = intArr[1] / intArr[0];
 		for (int i = 0; i < intArr.length - 1; i++) {
-			if ((intArr[i + 1] / intArr[i]) != step) {
+			if (((intArr[i + 1] % intArr[i]) != 0) || ((intArr[i + 1] / intArr[i]) != step)) {
 				return;
 			}
 		}
@@ -79,7 +79,6 @@ public class Homework5aa {
 
 		for (int i = 0; i < intArr.length; i++) {
 			if (Math.sqrt(intArr[i]) != (i + 1)) {
-				System.out.println(intArr[i]);
 				break;
 			}
 			if (i == (intArr.length - 1)) {

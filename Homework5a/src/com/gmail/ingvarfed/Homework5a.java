@@ -16,7 +16,7 @@ public class Homework5a {
 		Random rng = new Random();
 		int[] arr = new int[arrSize];
 		for (int i = 0; i < arr.length; ++i) {
-			arr[i] = rng.nextInt(100);
+			arr[i] = rng.nextInt();
 		}
 
 		System.out.println(maxValueInArray(arr) + " is the highest value in " + Arrays.toString(arr));
@@ -27,7 +27,7 @@ public class Homework5a {
 	 * @return The highest element of the array
 	 */
 	static int maxValueInArray(int[] arr) {
-		int max = 0;
+		int max = arr[0];
 		for (int i = 0; i < arr.length; ++i) {
 			max = (max >= arr[i]) ? max : arr[i];
 		}
