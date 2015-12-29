@@ -69,10 +69,6 @@ public class Homework5aa {
 	 *            - array
 	 */
 	static void checkPowers(double[] doubleArr) {
-		if (doubleArr[0] == 0) {
-			return;
-		}
-
 		int power = 0;
 
 		double[] init = { Math.sqrt(doubleArr[0]), Math.cbrt(doubleArr[0]) };
