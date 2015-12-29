@@ -75,8 +75,9 @@ public class Homework5aa {
 
 		int power = 0;
 
+		double[] init = { Math.sqrt(doubleArr[0]), Math.cbrt(doubleArr[0]) };
 		for (int i = 0; i < doubleArr.length; i++) {
-			if (Math.sqrt(doubleArr[i]) != (i + 1)) {
+			if (Math.sqrt(doubleArr[i]) != (init[0] + i)) {
 				break;
 			}
 			if (i == (doubleArr.length - 1)) {
@@ -84,7 +85,7 @@ public class Homework5aa {
 			}
 		}
 		for (int i = 0; i < doubleArr.length; i++) {
-			if (Math.cbrt(doubleArr[i]) != (i + 1)) {
+			if (Math.cbrt(doubleArr[i]) != (init[1] + i)) {
 				break;
 			}
 			if (i == (doubleArr.length - 1)) {
@@ -93,7 +94,7 @@ public class Homework5aa {
 		}
 		if (power != 0) {
 			System.out.println("Power: " + power + "!");
-			System.out.println("Next number is " + Math.pow(doubleArr.length + 1, power));
+			System.out.println("Next number is " + Math.pow(doubleArr.length + init[power - 2], power));
 		}
 	}
 
