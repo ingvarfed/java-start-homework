@@ -21,7 +21,7 @@ public class Homework6bb {
 	 * @param b - second number
 	 * @return - Hamming distance
 	 */
-	static int hammingLength(int a, int b){
+	public static int hammingLength(int a, int b){
 		int hLength = 0;
 		int diff = a^b;
 		for (int i = 0; i < 32; i++) {
