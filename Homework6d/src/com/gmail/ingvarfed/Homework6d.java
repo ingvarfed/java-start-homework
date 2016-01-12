@@ -15,7 +15,7 @@ public class Homework6d {
 	 * @param number - the number to output
 	 * @param p - precision
 	 */
-	static void printNumber(double number, int p){
+	public static void printNumber(double number, int p){
 		Formatter fr = new Formatter();
 		fr.format("%." + p + "f", number);
 		System.out.println(fr.toString());
