@@ -13,7 +13,7 @@ public class Homework6aa {
 	 * Creates Calendar object from user input
 	 * @return Calendar object
 	 */
-	static Calendar dateInput() {
+	public static Calendar dateInput() {
 		Calendar setDate = Calendar.getInstance();
 
 		System.out.print("Enter the date (YYYY-MM-DD): ");
@@ -32,7 +32,7 @@ public class Homework6aa {
 	 * @param setDate - first date
 	 * @param curDate - second date
 	 */
-	static void compareDate(Calendar setDate, Calendar curDate) {
+	public static void compareDate(Calendar setDate, Calendar curDate) {
 		if (setDate.get(Calendar.YEAR) != curDate.get(Calendar.YEAR)) {
 			System.out.println("The year is different!");
 		}
