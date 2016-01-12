@@ -15,7 +15,7 @@ public class Homework6a {
 	 * @param today - the current date
 	 * @return Number of milliseconds as a long integer type
 	 */
-	static long msSinceMonthAgo(Calendar today){
+	public static long msSinceMonthAgo(Calendar today){
 		long msPassed = today.getTime().getTime();
 		today.add(Calendar.MONTH, -1);
 		msPassed -= today.getTime().getTime();
