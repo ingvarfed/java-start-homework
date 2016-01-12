@@ -20,7 +20,7 @@ public class Homework6b {
 	 * @param rngBoundary - boundary of random numbers generator
 	 * @return array filled via RNG
 	 */
-	static int[] randArray(int arrSize, int rngBoundary) {
+	public static int[] randArray(int arrSize, int rngBoundary) {
 		int[] array = new int[arrSize];
 		Random rng = new Random();
 		for (int i = 0; i < array.length; i++) {
@@ -34,7 +34,7 @@ public class Homework6b {
 	 * @param array - the array to be converted
 	 * @return converted array
 	 */
-	static String arrToString(int[] array) {
+	public static String arrToString(int[] array) {
 		StringBuffer sb = new StringBuffer("[");
 		for (int i = 0; i < array.length; i++) {
 			sb.append(String.valueOf(array[i]));
