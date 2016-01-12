@@ -19,7 +19,7 @@ public class Homework6c {
 	 *            - binary number written to string
 	 * @return decimal integer
 	 */
-	static int binaryToDecimal(String bin) {
+	public static int binaryToDecimal(String bin) {
 		return Integer.parseInt(bin, 2);
 	}
 }
